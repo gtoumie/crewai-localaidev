@@ -2,6 +2,10 @@
 
 Welcome to the LatestAiDevelopment Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
+#### GT - Testing Ollama UC
+The purpose of this attempt is to run the crew AI with local ollama running small models to evaluate effectiveness for simple use cases 
+
+
 ## Installation
 
 Ensure you have Python >=3.10 <3.14 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
@@ -26,6 +30,15 @@ crewai install
 - Modify `src/latest_ai_development/config/tasks.yaml` to define your tasks
 - Modify `src/latest_ai_development/crew.py` to add your own logic, tools and specific args
 - Modify `src/latest_ai_development/main.py` to add custom inputs for your agents and tasks
+
+#### GT - Example Env running with ollama
+
+```
+MODEL=qwen3:4b
+OPENAI_API_KEY="not-needed"
+OPENAI_API_BASE=http://localhost:11434/v1
+SERPER_API_KEY=[CREATE YOUR OWN ON serper.dev] 
+```
 
 ## Running the Project
 
